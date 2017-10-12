@@ -37,7 +37,7 @@ void pause() {
 
 void main() {
 
-	int x;
+	int x; // make variable names more specific
 	int A;
 	int B;
 	int C;
@@ -63,6 +63,28 @@ void main() {
 		cout << "Neither" << endl;
 	}
 
+for (int i = 1; i < 30; i++) {
+			cout << "Give me a 3-digit number: " << endl;
+			cin >> x;
 
+
+			C = x % 10;
+			B = (x / 10) % 10;
+			A = (x / 100); 
+
+			if (A > B && B > C) {
+				cout << "Descending" << endl;
+			}
+
+			else if (C > B && B > A) {
+				cout << "Ascending" << endl;
+			}
+			
+			else {
+
+				cout << "Neither" << endl;
+			}
+		}
+	
 	pause(); // pauses to see the displayed text
 }
